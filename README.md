@@ -1,4 +1,4 @@
-# DifferentialEquations
+# DifferentialEquation
 This is a repo for the homework 2 of computational physics
 
 ## Introduction
