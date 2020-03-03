@@ -1,0 +1,4 @@
+name = "DifferentialEquations"
+uuid = "61486dfd-57d1-41eb-943d-a83f8dbf73a9"
+authors = ["jerry "]
+version = "0.1.0"
