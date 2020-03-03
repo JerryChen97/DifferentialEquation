@@ -1,5 +1,7 @@
 module DifferentialEquation
 
-greet() = print("Hello World!")
+export finite_difference
+
+include("finite_difference.jl")
 
 end # module
