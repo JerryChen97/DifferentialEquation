@@ -1,4 +1,4 @@
-module DifferentialEquations
+module DifferentialEquation
 
 greet() = print("Hello World!")
 
