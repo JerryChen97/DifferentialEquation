@@ -24,5 +24,9 @@ println("Tests on DifferentialEquation.jl begin!")
     include("energy_convergence.jl")
 end
 
+@testset "Different Resolution" begin
+    include("resolution.jl")
+end
+
 
 println("Tests on DifferentialEquation.jl end.")
