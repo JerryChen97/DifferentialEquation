@@ -46,6 +46,34 @@ and the boundary conditions are
 Wave equations describe the oscillation, and the corresponding energy to preserve is
 <p align="center"><img src="/tex/43f476bab737de82cfbb595f26ea5a22.svg?invert_in_darkmode&sanitize=true" align=middle width=179.03450399999997pt height=36.53007435pt/></p>
 
+## Usage
+To use this package it's quite easy:
+
+```Julia
+# here we see why it's named like this: to prevent mixing with DifferentialEquations. (Really?)
+using DifferentialEquation
+
+# parameter for wave equation
+c=1.0
+
+# parameter for discretization
+Nx=100
+Nt=100
+
+# parameter for initial conditions
+f=zero
+g=(x->sin(2pi * x))
+
+# choose a method
+method="finite difference"
+
+# return you with the 2d array U[i_x, n_t]
+U=wave_func_solver(c=c, Nt=Nt, Nx=Nx, f=f, g=g, method=method)
+
+# calculate the energy
+Energy=fd_energy_evolv(c=c, Nt=Nt, Nx=Nx, f=f, g=g, method=method)
+```
+
 ## Outlook
 ### Scaling
 Lots of current parameters in our method can be vanished through some scaling technique.
