@@ -26,18 +26,18 @@ $$ f''(x_n) = \frac{f(x_{n-1})+f(x_{n+1})-2f(x_n)}{\Delta x^2} $$
 
 so here for our wave equation we have
 
-$$ \frac{u_{i}^{n+1}-2 u_{i}^{n}+u_{i}^{n-1}}{\Delta t^{2}}=c^{2} \frac{u_{i+1}^{n}-2 u_{i}^{n}+u_{i-1}^{n}}{\Delta x^{2}} $$
+$$ \frac{u(x_i, t_{n+1})-2 u(x_i, t_{n})+u(x_i, t_{n-1})}{\Delta t^{2}}=c^{2} \frac{u(x_{i+1}, t_{n})-2 u(x_i, t_{n})+u(x_{i-1}, t_{n})}{\Delta x^{2}} $$
 
 where we denote the time indices by n and space indices by i.
 
 Therefore, we can derive that the update rule for our states $u_i^n$
 
-$$ u_{i}^{n+1}=-u_{i}^{n-1}+2 u_{i}^{n}+{c \frac{\Delta t}{\Delta x}}^{2}\left(u_{i+1}^{n}-2 u_{i}^{n}+u_{i-1}^{n}\right) $$
+$$ u(x_i, t_{n+1})=-u(x_i, t_{n-1})+2 u(x_i, t_{n})+{c \frac{\Delta t}{\Delta x}}^{2}\left(u(x_{i+1}, t_{n})-2 u(x_i, t_{n})+u(x_{i-1}, t_{n})\right) $$
 
 If we denote $r:=c \frac{\Delta t}{\Delta x}$, then we can sort the formula above as 
-$$ u_{i}^{n}={r}^{2}u_{i+1}^{n-1}+2(1-r^2) u_{i}^{n-1}+{r}^{2} u_{i-1}^{n-1} -u_{i}^{n-2}. $$
+$$ u(x_i, t_{n})={r}^{2}u(x_{i+1}, t_{n-1})+2(1-r^2) u(x_i, t_{n-1})+{r}^{2} u(x_{i-1}, t_{n-1}) -u_{i}^{n-2}. $$
 
 Meanwhile, the initial condition shows that
 $$
-u_i^2 = \frac{1}{2}\left(r^2 u_{i+1}^1 + 2(1-r^2)u_i^1 + r^2 u_{i-1}^1\right) + \Delta t g(x_i).
+u(x_{i}, t_{2}) = \frac{1}{2}\left(r^2 u(x_{i+1}, t_{1}) + 2(1-r^2)u(x_{i}, t_{1}) + r^2 u(x_{i-1}, t_{1})\right) + g(x_i) \Delta t.
 $$
