@@ -1,3 +1,13 @@
+function wave_func_solver(;c::Float64=1.0, Nt::Int=100, Nx::Int=100, f=zero, g=(x->sin(2pi * x)), method="finite difference")
+    if method in supported_method_list
+        func = method_dict[method]
+        return func(c=c, Nt=Nt, Nx=Nx, f=f, g=g)
+    else
+        ArgumentError("No such method.")
+        return -1
+    end
+end
+
 @doc raw"""
     finite_difference()
     carry the most fundamental computation of a `1+1`-dimensional wave equation
