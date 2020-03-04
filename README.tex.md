@@ -85,5 +85,12 @@ Energy=fd_energy_evolv(c=c, Nt=Nt, Nx=Nx, f=f, g=g, method=method)
 Lots of current parameters in our method can be vanished through some scaling technique.
 This should make great difference since the finite difference method is not always reliable and the error accumulates along the evolution.
 ### Other Algorithms
-### Plots
+To provide users with more choices of algorithms.
+Our currently primary choice, finite difference method, can create some strange phenomena at specific parameter regions.
+### More Tests 
+Currently we only test with four different kinds of initial conditions: harmonic functions, gaussian functions, random generators and instantons. Judged by the standard deviation of evolving energy, they all passed the criteria `1e-2`, among which the harmonics perform best with a lower bound `1e-4`.
 
+We can consider testing and comparing different initial conditions and different algorithms (if existing) with each other.
+Due to `Julia`'s support for meta-programming, this might be not difficult to implement.
+### More Plots
+Current plots are stored in the `test/` folder
