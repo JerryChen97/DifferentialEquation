@@ -90,7 +90,9 @@ Due to `Julia`'s support for meta-programming, this might be not difficult to im
 As for the resolution tests, we tested at 4 different resolutions: <img src="/tex/87fb10afc475c59dd41b66a212d167ea.svg?invert_in_darkmode&sanitize=true" align=middle width=258.2189313pt height=22.465723500000017pt/>. Most of them passed the `0.01` criteria, but random generator and gaussian functions usually fail at <img src="/tex/422e5faeb427b8fb0db43bbbbf5e7d0a.svg?invert_in_darkmode&sanitize=true" align=middle width=53.35601864999999pt height=22.465723500000017pt/>.
 
 ### More Plots
-Current plots are stored in the `test/` folder
+Current plots are stored in the `test/` folder.
+
+We can plot more interesting figures, e.g. the gif's for the state evolution.
 
 ## Acknowledgement
 Thanks to Cristian for great discussion with me about various aspects of PDE's.
