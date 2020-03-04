@@ -92,7 +92,7 @@ Currently we only test with four different kinds of initial conditions: harmonic
 
 We can consider testing and comparing different initial conditions and different algorithms (if existing) with each other.
 Due to `Julia`'s support for meta-programming, this might be not difficult to implement.
-$$test$$
+
 ### More Plots
 Current plots are stored in the `test/` folder
 
