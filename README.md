@@ -41,3 +41,10 @@ Meanwhile, the initial condition shows that
 <p align="center"><img src="/tex/cfcf98a829e439ba5d98f0e1a1ba9c66.svg?invert_in_darkmode&sanitize=true" align=middle width=531.69560895pt height=32.990165999999995pt/></p>
 and the boundary conditions are 
 <p align="center"><img src="/tex/f018c4b328d47da30851b8172a59ba82.svg?invert_in_darkmode&sanitize=true" align=middle width=315.10891664999997pt height=16.438356pt/></p>
+
+## Physical Essence
+Wave equations describe the oscillation, and the corresponding energy to preserve is
+<p align="center"><img src="/tex/771b449f0f159ad622ddb645a134a09e.svg?invert_in_darkmode&sanitize=true" align=middle width=174.4682808pt height=36.53007435pt/></p>
+
+## Outlook
+
