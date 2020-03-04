@@ -20,7 +20,7 @@ Here we choose the finite difference method as our primary choice since it is ea
 
 ### Finite Difference
 
-By finite difference method, we can express the derivatives as the difference between lattice points:
+By finite difference method, we can express the derivatives as the difference between lattice points, which are discretized by $\Delta x$:
 
 $$ f''(x_n) = \frac{f(x_{n-1})+f(x_{n+1})-2f(x_n)}{\Delta x^2} $$
 
@@ -35,4 +35,9 @@ Therefore, we can derive that the update rule for our states $u_i^n$
 $$ u_{i}^{n+1}=-u_{i}^{n-1}+2 u_{i}^{n}+{c \frac{\Delta t}{\Delta x}}^{2}\left(u_{i+1}^{n}-2 u_{i}^{n}+u_{i-1}^{n}\right) $$
 
 If we denote $r:=c \frac{\Delta t}{\Delta x}$, then we can sort the formula above as 
-$$ u_{i}^{n}=+{r}^{2}u_{i+1}^{n-1}+2(1-r^2) u_{i}^{n-1}+{r}^{2} u_{i-1}^{n-1} -u_{i}^{n-2} $$
+$$ u_{i}^{n}={r}^{2}u_{i+1}^{n-1}+2(1-r^2) u_{i}^{n-1}+{r}^{2} u_{i-1}^{n-1} -u_{i}^{n-2}. $$
+
+Meanwhile, the initial condition shows that
+$$
+u_i^2 = \frac{1}{2}\left(r^2 u_{i+1}^1 + 2(1-r^2)u_i^1 + r^2 u_{i-1}^1\right) + \Delta t g(x_i).
+$$
