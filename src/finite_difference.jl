@@ -6,7 +6,7 @@
     ```
     with the default boundary conditions `u(0, t) = 0` and `u(1, t) = 0` and the default initial conditions `u(x, 0) = f(x) = 0` and `u_t(x, 0) = g(x) = \sin(2 \pi x)`
 """
-function finite_difference(c::Float64=1.0, Nt::Int=100, Nx::Int=100, f=zero, g=(x->sin(2pi * x)))
+function finite_difference(;c::Float64=1.0, Nt::Int=100, Nx::Int=100, f=zero, g=(x->sin(2pi * x)))
     # print("Hello Jerry!")
 
     # some intermediate parameters used in the finite difference algorithm
