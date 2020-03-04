@@ -37,7 +37,7 @@ $$ u(x_i, t_{n+1})=-u(x_i, t_{n-1})+2 u(x_i, t_{n})+({c \frac{\Delta t}{\Delta x
 If we denote $r:=c \frac{\Delta t}{\Delta x}$, then we can sort the formula above as 
 $$ u(x_i, t_{n})={r}^{2}u(x_{i+1}, t_{n-1})+2(1-r^2) u(x_i, t_{n-1})+{r}^{2} u(x_{i-1}, t_{n-1}) -u(x_{i}, t_{n-2}). $$
 
-Meanwhile, the initial condition shows that
+Meanwhile, due to the extensibility and uniqueness of the solution of wave equations, the initial condition shows that
 $$
 u(x_{i}, t_{1}) = \frac{1}{2}\left(r^2 u(x_{i+1}, t_{0}) + 2(1-r^2)u(x_{i}, t_{0}) + r^2 u(x_{i-1}, t_{0})\right) + g(x_i) \Delta t,
 $$
