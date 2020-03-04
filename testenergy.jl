@@ -18,8 +18,7 @@ function get_energy_evolution(c)
     Nt = 100
     Nx = 100
     f  = (x -> x * (1 - x))
-    U=wave_func_solver(c=c, Nt=Nt, Nx=Nx, g=random_f);energy_list = fd_energy_over_time_with_boundaries(U,c)
-    return energy_list[2:Nt]
+    return fd_energy_evolv(c=c, Nt=Nt, Nx=Nx, g=random_f)
 
 end
 
@@ -27,13 +26,18 @@ end
 
 
 clf()
-for c in 0.1:0.1:1.0
-    energy_evolv = get_energy_evolution(c)
-    println(var(energy_evolv))
-    plot(energy_evolv)
-end
-xlabel("Time")
+# for c in 0.1:0.1:1.0
+#     energy_evolv = get_energy_evolution(c)
+#     println(var(energy_evolv))
+#     # plot(energy_evolv)
+# end
+x = [c for c in 0.1:0.1:1.0]
+energy_evolv_list = [get_energy_evolution(c) for c in x]
+y = [mean(energy_evolv) for energy_evolv in energy_evolv_list]
+error = [Statistics.std(energy_evolv) for energy_evolv in energy_evolv_list]
+xlabel("c")
 ylabel("Energy")
 title(L"$f = random$")
+errorbar(x, y, error, fmt="o")
 display(gcf())
 # savefig("plot.png")
