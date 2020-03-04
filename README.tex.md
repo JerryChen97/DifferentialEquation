@@ -45,3 +45,12 @@ and the boundary conditions are
 $$
 u(x_0, t_{n}) = u(x_{N_x}, t_{n}) = 0, \forall n \in \left{0,1,\cdots,N_t\right}
 $$
+
+## Physical Essence
+Wave equations describe the oscillation, and the corresponding energy to preserve is
+$$
+E = \frac{1}{2} \int \left( u_t^2 + c^2 u_x^2 \right) \text{d} x
+$$
+
+## Outlook
+
