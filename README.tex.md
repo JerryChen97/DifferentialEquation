@@ -56,4 +56,6 @@ $$
 ### Scaling
 Lots of current parameters in our method can be vanished through some scaling technique.
 This should make great difference since the finite difference method is not always reliable and the error accumulates along the evolution.
+### Other Algorithms
+### Plots
 
