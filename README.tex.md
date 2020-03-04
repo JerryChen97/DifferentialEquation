@@ -34,3 +34,5 @@ Therefore, we can derive that the update rule for our states $u_i^n$
 
 $$ u_{i}^{n+1}=-u_{i}^{n-1}+2 u_{i}^{n}+{c \frac{\Delta t}{\Delta x}}^{2}\left(u_{i+1}^{n}-2 u_{i}^{n}+u_{i-1}^{n}\right) $$
 
+If we denote $r:=c \frac{\Delta t}{\Delta x}$, then we can sort the formula above as 
+$$ u_{i}^{n}=+{r}^{2}u_{i+1}^{n-1}+2(1-r^2) u_{i}^{n-1}+{r}^{2} u_{i-1}^{n-1} -u_{i}^{n-2} $$
