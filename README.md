@@ -37,14 +37,19 @@ Therefore, we can derive that the update rule for our states <img src="/tex/6302
 If we denote <img src="/tex/f444ea4c61729930db7b7d7fb6b020aa.svg?invert_in_darkmode&sanitize=true" align=middle width=61.69672244999999pt height=28.670654099999997pt/>, then we can sort the formula above as 
 <p align="center"><img src="/tex/94acc5eacc9ed949385a4b28e99334c5.svg?invert_in_darkmode&sanitize=true" align=middle width=578.8583724pt height=18.312383099999998pt/></p>
 
-Meanwhile, the initial condition shows that
+Meanwhile, due to the extensibility and uniqueness of the solution of wave equations, the initial condition shows that
 <p align="center"><img src="/tex/cfcf98a829e439ba5d98f0e1a1ba9c66.svg?invert_in_darkmode&sanitize=true" align=middle width=531.69560895pt height=32.990165999999995pt/></p>
 and the boundary conditions are 
 <p align="center"><img src="/tex/f018c4b328d47da30851b8172a59ba82.svg?invert_in_darkmode&sanitize=true" align=middle width=315.10891664999997pt height=16.438356pt/></p>
 
 ## Physical Essence
 Wave equations describe the oscillation, and the corresponding energy to preserve is
-<p align="center"><img src="/tex/771b449f0f159ad622ddb645a134a09e.svg?invert_in_darkmode&sanitize=true" align=middle width=174.4682808pt height=36.53007435pt/></p>
+<p align="center"><img src="/tex/43f476bab737de82cfbb595f26ea5a22.svg?invert_in_darkmode&sanitize=true" align=middle width=179.03450399999997pt height=36.53007435pt/></p>
 
 ## Outlook
+### Scaling
+Lots of current parameters in our method can be vanished through some scaling technique.
+This should make great difference since the finite difference method is not always reliable and the error accumulates along the evolution.
+### Other Algorithms
+### Plots
 
