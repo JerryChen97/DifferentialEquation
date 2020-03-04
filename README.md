@@ -32,5 +32,7 @@ where we denote the time indices by n and space indices by i.
 
 Therefore, we can derive that the update rule for our states <img src="/tex/6302bc0298881fdd4cf1954733ad3f9a.svg?invert_in_darkmode&sanitize=true" align=middle width=17.53629569999999pt height=21.839370299999988pt/>
 
-<p align="center"><img src="/tex/97f34a2d29d89d82b8ad1c6219042a0d.svg?invert_in_darkmode&sanitize=true" align=middle width=339.7534635pt height=20.2010094pt/></p>
+<p align="center"><img src="/tex/043649d8cfb659b76bdee4ca1c01177e.svg?invert_in_darkmode&sanitize=true" align=middle width=360.98145765pt height=36.98103915pt/></p>
 
+If we denote <img src="/tex/f444ea4c61729930db7b7d7fb6b020aa.svg?invert_in_darkmode&sanitize=true" align=middle width=61.69672244999999pt height=28.670654099999997pt/>, then we can sort the formula above as 
+<p align="center"><img src="/tex/27f74ece5523d39264446e1350400a6a.svg?invert_in_darkmode&sanitize=true" align=middle width=348.3092514pt height=20.3994087pt/></p>
