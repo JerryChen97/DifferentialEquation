@@ -49,7 +49,7 @@ $$
 ## Physical Essence
 Wave equations describe the oscillation, and the corresponding energy to preserve is
 $$
-E = \frac{1}{2} \int \left( u_t^2 + c^2 u_x^2 \right) \text{d} x
+E = \frac{1}{2} \int \left( u_t^2 + c^2 u_x^2 \right) \text{d} x.
 $$
 
 ## Outlook
