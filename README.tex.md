@@ -43,5 +43,5 @@ u(x_{i}, t_{1}) = \frac{1}{2}\left(r^2 u(x_{i+1}, t_{0}) + 2(1-r^2)u(x_{i}, t_{0
 $$
 and the boundary conditions are 
 $$
-u(x_0, t_{n}) = u(x_{N_x}) = 0
+u(x_0, t_{n}) = u(x_{N_x}, t_{n}) = 0, \forall n \in \left{0,1,\cdots,N_t\right}
 $$
