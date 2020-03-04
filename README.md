@@ -11,3 +11,15 @@ with default boundary conditions
 and initial conditions 
 ![u(x, 0) = f(x)](https://render.githubusercontent.com/render/math?math=u(x%2C%200)%20%3D%20f(x)), ![u_t(x, 0) = g(x)](https://render.githubusercontent.com/render/math?math=u_t(x%2C%200)%20%3D%20g(x))
 
+## Algorithm
+
+This is a classical problem, and there are many different methods to approach the correct solution.
+
+Here we choose the finite difference method as our primary choice since it is easiest to implement and most straightforward to understand.
+
+
+### Finite Difference
+
+By finite difference method, we can express the derivatives as the difference between lattice points:
+![f''(x_n) = \frac{f(x_{n-1})+f(x_{n+1})-2f(x_n)}{\Delta x^2}](https://render.githubusercontent.com/render/math?math=f''(x_n)%20%3D%20%5Cfrac%7Bf(x_%7Bn-1%7D)%2Bf(x_%7Bn%2B1%7D)-2f(x_n)%7D%7B%5CDelta%20x%5E2%7D)
+
