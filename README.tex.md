@@ -93,6 +93,8 @@ Currently we only test with four different kinds of initial conditions: harmonic
 We can consider testing and comparing different initial conditions and different algorithms (if existing) with each other.
 Due to `Julia`'s support for meta-programming, this might be not difficult to implement.
 
+As for the resolution tests, we tested at 4 different resolutions: $N_t=N_x=N=10,100,1000,10000$. Most of them passed the `0.01` criteria, but random generator and gaussian functions usually fail at $N=10$.
+
 ### More Plots
 Current plots are stored in the `test/` folder
 
