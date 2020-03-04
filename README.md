@@ -32,10 +32,10 @@ where we denote the time indices by n and space indices by i.
 
 Therefore, we can derive that the update rule for our states <img src="/tex/6302bc0298881fdd4cf1954733ad3f9a.svg?invert_in_darkmode&sanitize=true" align=middle width=17.53629569999999pt height=21.839370299999988pt/>
 
-<p align="center"><img src="/tex/8dd2bc499d13395e7d4df621f845a74e.svg?invert_in_darkmode&sanitize=true" align=middle width=611.0197863pt height=36.98103915pt/></p>
+<p align="center"><img src="/tex/b61c261e9e2eccdacd0a87c44c1cda56.svg?invert_in_darkmode&sanitize=true" align=middle width=623.80521885pt height=33.62942055pt/></p>
 
 If we denote <img src="/tex/f444ea4c61729930db7b7d7fb6b020aa.svg?invert_in_darkmode&sanitize=true" align=middle width=61.69672244999999pt height=28.670654099999997pt/>, then we can sort the formula above as 
-<p align="center"><img src="/tex/ed166229618bf54eae9c7f5632c41d43.svg?invert_in_darkmode&sanitize=true" align=middle width=537.96317355pt height=19.0295292pt/></p>
+<p align="center"><img src="/tex/94acc5eacc9ed949385a4b28e99334c5.svg?invert_in_darkmode&sanitize=true" align=middle width=578.8583724pt height=18.312383099999998pt/></p>
 
 Meanwhile, the initial condition shows that
 <p align="center"><img src="/tex/c659f5d644729fe04a7e176db474f018.svg?invert_in_darkmode&sanitize=true" align=middle width=531.69560895pt height=32.990165999999995pt/></p>
