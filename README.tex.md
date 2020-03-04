@@ -39,5 +39,9 @@ $$ u(x_i, t_{n})={r}^{2}u(x_{i+1}, t_{n-1})+2(1-r^2) u(x_i, t_{n-1})+{r}^{2} u(x
 
 Meanwhile, the initial condition shows that
 $$
-u(x_{i}, t_{1}) = \frac{1}{2}\left(r^2 u(x_{i+1}, t_{0}) + 2(1-r^2)u(x_{i}, t_{0}) + r^2 u(x_{i-1}, t_{0})\right) + g(x_i) \Delta t.
+u(x_{i}, t_{1}) = \frac{1}{2}\left(r^2 u(x_{i+1}, t_{0}) + 2(1-r^2)u(x_{i}, t_{0}) + r^2 u(x_{i-1}, t_{0})\right) + g(x_i) \Delta t,
+$$
+and the boundary conditions are 
+$$
+u(x_0, t_{n}) = u(x_{N_x}) = 0
 $$
