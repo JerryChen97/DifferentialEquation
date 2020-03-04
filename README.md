@@ -8,5 +8,5 @@ with default boundary condition
 $$ u(0, t) = u(1, t) = 0 $$
 
 ```LaTeX
-test
+\frac{1}{2}
 ```
