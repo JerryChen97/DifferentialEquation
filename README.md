@@ -26,16 +26,16 @@ By finite difference method, we can express the derivatives as the difference be
 
 so here for our wave equation we have
 
-<p align="center"><img src="/tex/8e506e156bc88920c722143bf25e4392.svg?invert_in_darkmode&sanitize=true" align=middle width=307.29408105pt height=36.844036349999996pt/></p>
+<p align="center"><img src="/tex/e3afcc9b166c3ba60bb16156b26e79db.svg?invert_in_darkmode&sanitize=true" align=middle width=559.615452pt height=34.7253258pt/></p>
 
 where we denote the time indices by n and space indices by i.
 
 Therefore, we can derive that the update rule for our states <img src="/tex/6302bc0298881fdd4cf1954733ad3f9a.svg?invert_in_darkmode&sanitize=true" align=middle width=17.53629569999999pt height=21.839370299999988pt/>
 
-<p align="center"><img src="/tex/043649d8cfb659b76bdee4ca1c01177e.svg?invert_in_darkmode&sanitize=true" align=middle width=360.98145765pt height=36.98103915pt/></p>
+<p align="center"><img src="/tex/8dd2bc499d13395e7d4df621f845a74e.svg?invert_in_darkmode&sanitize=true" align=middle width=611.0197863pt height=36.98103915pt/></p>
 
 If we denote <img src="/tex/f444ea4c61729930db7b7d7fb6b020aa.svg?invert_in_darkmode&sanitize=true" align=middle width=61.69672244999999pt height=28.670654099999997pt/>, then we can sort the formula above as 
-<p align="center"><img src="/tex/edbb004fad14c8d2f9d1eac3c769690c.svg?invert_in_darkmode&sanitize=true" align=middle width=340.9119285pt height=20.3994087pt/></p>
+<p align="center"><img src="/tex/ed166229618bf54eae9c7f5632c41d43.svg?invert_in_darkmode&sanitize=true" align=middle width=537.96317355pt height=19.0295292pt/></p>
 
 Meanwhile, the initial condition shows that
-<p align="center"><img src="/tex/a25474f0d0b0dd42cce664225e9eadc7.svg?invert_in_darkmode&sanitize=true" align=middle width=364.31162954999996pt height=32.990165999999995pt/></p>
+<p align="center"><img src="/tex/c659f5d644729fe04a7e176db474f018.svg?invert_in_darkmode&sanitize=true" align=middle width=531.69560895pt height=32.990165999999995pt/></p>
