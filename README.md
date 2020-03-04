@@ -4,12 +4,12 @@ This is a repo for the homework 2 of computational physics
 ## Introduction
 In this module we will make use of finite difference method to solve the scalar wave equation in 1+1 dimensions:
 
-### ![\partial_t^2 u + c^2 \partial_x^2 u = 0](https://render.githubusercontent.com/render/math?math=%5Cpartial_t%5E2%20u%20%2B%20c%5E2%20%5Cpartial_x%5E2%20u%20%3D%200)
+<p align="center"><img src="/tex/ad532901ecfbc2f0182429c2cee2bf9c.svg?invert_in_darkmode&sanitize=true" align=middle width=117.56657219999998pt height=18.2666319pt/></p>
 
 with default boundary conditions
-![u(0, t) = u(1, t) = 0](https://render.githubusercontent.com/render/math?math=u(0%2C%20t)%20%3D%20u(1%2C%20t)%20%3D%200)
+<p align="center"><img src="/tex/421d69a5b57a1457fc62b64eb6a85191.svg?invert_in_darkmode&sanitize=true" align=middle width=139.3682631pt height=16.438356pt/></p>
 and initial conditions 
-![u(x, 0) = f(x)](https://render.githubusercontent.com/render/math?math=u(x%2C%200)%20%3D%20f(x)), ![u_t(x, 0) = g(x)](https://render.githubusercontent.com/render/math?math=u_t(x%2C%200)%20%3D%20g(x))
+<p align="center"><img src="/tex/8a7c1b1eeb192f53dc9b52d18926de68.svg?invert_in_darkmode&sanitize=true" align=middle width=101.03125229999999pt height=16.438356pt/></p>
 
 ## Algorithm
 
@@ -22,15 +22,15 @@ Here we choose the finite difference method as our primary choice since it is ea
 
 By finite difference method, we can express the derivatives as the difference between lattice points:
 
-![f''(x_n) = \frac{f(x_{n-1})+f(x_{n+1})-2f(x_n)}{\Delta x^2}](https://render.githubusercontent.com/render/math?math=f''(x_n)%20%3D%20%5Cfrac%7Bf(x_%7Bn-1%7D)%2Bf(x_%7Bn%2B1%7D)-2f(x_n)%7D%7B%5CDelta%20x%5E2%7D)
+<p align="center"><img src="/tex/44c377ef0d2cd5bf32df24473e1ba3ad.svg?invert_in_darkmode&sanitize=true" align=middle width=277.94719095pt height=34.7253258pt/></p>
 
 so here for our wave equation we have
 
-![\frac{u_{i}^{n+1}-2 u_{i}^{n}+u_{i}^{n-1}}{\Delta t^{2}}=c^{2} \frac{u_{i+1}^{n}-2 u_{i}^{n}+u_{i-1}^{n}}{\Delta x^{2}}](https://render.githubusercontent.com/render/math?math=%5Cfrac%7Bu_%7Bi%7D%5E%7Bn%2B1%7D-2%20u_%7Bi%7D%5E%7Bn%7D%2Bu_%7Bi%7D%5E%7Bn-1%7D%7D%7B%5CDelta%20t%5E%7B2%7D%7D%3Dc%5E%7B2%7D%20%5Cfrac%7Bu_%7Bi%2B1%7D%5E%7Bn%7D-2%20u_%7Bi%7D%5E%7Bn%7D%2Bu_%7Bi-1%7D%5E%7Bn%7D%7D%7B%5CDelta%20x%5E%7B2%7D%7D)
+<p align="center"><img src="/tex/8e506e156bc88920c722143bf25e4392.svg?invert_in_darkmode&sanitize=true" align=middle width=307.29408105pt height=36.844036349999996pt/></p>
 
 where we denote the time indices by n and space indices by i.
 
-Therefore, we can derive that the update rule for our states ![u_i^n](https://render.githubusercontent.com/render/math?math=u_i%5En)
+Therefore, we can derive that the update rule for our states <img src="/tex/6302bc0298881fdd4cf1954733ad3f9a.svg?invert_in_darkmode&sanitize=true" align=middle width=17.53629569999999pt height=21.839370299999988pt/>
 
-![u_{i}^{n+1}=-u_{i}^{n-1}+2 u_{i}^{n}+C^{2}\left(u_{i+1}^{n}-2 u_{i}^{n}+u_{i-1}^{n}\right)](https://render.githubusercontent.com/render/math?math=u_%7Bi%7D%5E%7Bn%2B1%7D%3D-u_%7Bi%7D%5E%7Bn-1%7D%2B2%20u_%7Bi%7D%5E%7Bn%7D%2BC%5E%7B2%7D%5Cleft(u_%7Bi%2B1%7D%5E%7Bn%7D-2%20u_%7Bi%7D%5E%7Bn%7D%2Bu_%7Bi-1%7D%5E%7Bn%7D%5Cright))
+<p align="center"><img src="/tex/97f34a2d29d89d82b8ad1c6219042a0d.svg?invert_in_darkmode&sanitize=true" align=middle width=339.7534635pt height=20.2010094pt/></p>
 
