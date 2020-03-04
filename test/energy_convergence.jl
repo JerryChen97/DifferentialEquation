@@ -26,6 +26,7 @@ println("Our criteria for energy is standart deviation < ", criteria)
     end
     xlabel("Time")
     ylabel("Energy")
+    title("$(func) energy evolution")
     savefig("$(func)_func_energy.png")
 
     clf()
