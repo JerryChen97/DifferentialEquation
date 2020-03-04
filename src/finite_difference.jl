@@ -9,6 +9,11 @@
 function finite_difference(;c::Float64=1.0, Nt::Int=100, Nx::Int=100, f=zero, g=(x->sin(2pi * x)))
     # print("Hello Jerry!")
 
+    # test if the input initial conditions are correct or not
+    if f(0.0) ≈ 0 && f(1.0) ≈ 0
+    else
+        ArgumentError("The input initial condition function f not satisfying the boundary condition f(0) = f(1) = 0")
+
     # some intermediate parameters used in the finite difference algorithm
     r = c * Nx / Nt
     Δt = 1.0 / Nt 
