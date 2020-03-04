@@ -13,6 +13,7 @@ function finite_difference(;c::Float64=1.0, Nt::Int=100, Nx::Int=100, f=zero, g=
     if f(0.0) ≈ 0 && f(1.0) ≈ 0
     else
         ArgumentError("The input initial condition function f not satisfying the boundary condition f(0) = f(1) = 0")
+    end
 
     # some intermediate parameters used in the finite difference algorithm
     r = c * Nx / Nt
