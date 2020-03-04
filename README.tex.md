@@ -52,6 +52,34 @@ $$
 E = \frac{1}{2} \int \left( u_t^2 + c^2 u_x^2 \right) \text{d} x.
 $$
 
+## Usage
+To use this package it's quite easy:
+
+```Julia
+# here we see why it's named like this: to prevent mixing with DifferentialEquations. (Really?)
+using DifferentialEquation
+
+# parameter for wave equation
+c=1.0
+
+# parameter for discretization
+Nx=100
+Nt=100
+
+# parameter for initial conditions
+f=zero
+g=(x->sin(2pi * x))
+
+# choose a method
+method="finite difference"
+
+# return you with the 2d array U[i_x, n_t]
+U=wave_func_solver(c=c, Nt=Nt, Nx=Nx, f=f, g=g, method=method)
+
+# calculate the energy
+Energy=fd_energy_evolv(c=c, Nt=Nt, Nx=Nx, f=f, g=g, method=method)
+```
+
 ## Outlook
 ### Scaling
 Lots of current parameters in our method can be vanished through some scaling technique.
