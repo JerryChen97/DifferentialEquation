@@ -38,4 +38,4 @@ If we denote <img src="/tex/f444ea4c61729930db7b7d7fb6b020aa.svg?invert_in_darkm
 <p align="center"><img src="/tex/94acc5eacc9ed949385a4b28e99334c5.svg?invert_in_darkmode&sanitize=true" align=middle width=578.8583724pt height=18.312383099999998pt/></p>
 
 Meanwhile, the initial condition shows that
-<p align="center"><img src="/tex/c659f5d644729fe04a7e176db474f018.svg?invert_in_darkmode&sanitize=true" align=middle width=531.69560895pt height=32.990165999999995pt/></p>
+<p align="center"><img src="/tex/22a37772d9072f2e5852d00f79b4a0e2.svg?invert_in_darkmode&sanitize=true" align=middle width=531.69560895pt height=32.990165999999995pt/></p>
