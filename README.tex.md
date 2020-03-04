@@ -32,10 +32,10 @@ where we denote the time indices by n and space indices by i.
 
 Therefore, we can derive that the update rule for our states $u_i^n$
 
-$$ u(x_i, t_{n+1})=-u(x_i, t_{n-1})+2 u(x_i, t_{n})+{c \frac{\Delta t}{\Delta x}}^{2}\left(u(x_{i+1}, t_{n})-2 u(x_i, t_{n})+u(x_{i-1}, t_{n})\right) $$
+$$ u(x_i, t_{n+1})=-u(x_i, t_{n-1})+2 u(x_i, t_{n})+({c \frac{\Delta t}{\Delta x}})^{2}\left(u(x_{i+1}, t_{n})-2 u(x_i, t_{n})+u(x_{i-1}, t_{n})\right) $$
 
 If we denote $r:=c \frac{\Delta t}{\Delta x}$, then we can sort the formula above as 
-$$ u(x_i, t_{n})={r}^{2}u(x_{i+1}, t_{n-1})+2(1-r^2) u(x_i, t_{n-1})+{r}^{2} u(x_{i-1}, t_{n-1}) -u_{i}^{n-2}. $$
+$$ u(x_i, t_{n})={r}^{2}u(x_{i+1}, t_{n-1})+2(1-r^2) u(x_i, t_{n-1})+{r}^{2} u(x_{i-1}, t_{n-1}) -u(x_{i}, t_{n-2}). $$
 
 Meanwhile, the initial condition shows that
 $$
