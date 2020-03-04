@@ -26,4 +26,8 @@ By finite difference method, we can express the derivatives as the difference be
 
 so here for our wave equation we have
 ![\frac{u_{i}^{n+1}-2 u_{i}^{n}+u_{i}^{n-1}}{\Delta t^{2}}=c^{2} \frac{u_{i+1}^{n}-2 u_{i}^{n}+u_{i-1}^{n}}{\Delta x^{2}}](https://render.githubusercontent.com/render/math?math=%5Cfrac%7Bu_%7Bi%7D%5E%7Bn%2B1%7D-2%20u_%7Bi%7D%5E%7Bn%7D%2Bu_%7Bi%7D%5E%7Bn-1%7D%7D%7B%5CDelta%20t%5E%7B2%7D%7D%3Dc%5E%7B2%7D%20%5Cfrac%7Bu_%7Bi%2B1%7D%5E%7Bn%7D-2%20u_%7Bi%7D%5E%7Bn%7D%2Bu_%7Bi-1%7D%5E%7Bn%7D%7D%7B%5CDelta%20x%5E%7B2%7D%7D)
-where we denote the time indices by n and space indices by i
+where we denote the time indices by n and space indices by i.
+
+Therefore, we can derive that the update rule for our states ![u_i^n](https://render.githubusercontent.com/render/math?math=u_i%5En)
+![u_{i}^{n+1}=-u_{i}^{n-1}+2 u_{i}^{n}+C^{2}\left(u_{i+1}^{n}-2 u_{i}^{n}+u_{i-1}^{n}\right)](https://render.githubusercontent.com/render/math?math=u_%7Bi%7D%5E%7Bn%2B1%7D%3D-u_%7Bi%7D%5E%7Bn-1%7D%2B2%20u_%7Bi%7D%5E%7Bn%7D%2BC%5E%7B2%7D%5Cleft(u_%7Bi%2B1%7D%5E%7Bn%7D-2%20u_%7Bi%7D%5E%7Bn%7D%2Bu_%7Bi-1%7D%5E%7Bn%7D%5Cright))
+
