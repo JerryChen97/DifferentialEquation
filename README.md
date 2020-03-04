@@ -22,4 +22,5 @@ Here we choose the finite difference method as our primary choice since it is ea
 
 By finite difference method, we can express the derivatives as the difference between lattice points:
 ![f''(x_n) = \frac{f(x_{n-1})+f(x_{n+1})-2f(x_n)}{\Delta x^2}](https://render.githubusercontent.com/render/math?math=f''(x_n)%20%3D%20%5Cfrac%7Bf(x_%7Bn-1%7D)%2Bf(x_%7Bn%2B1%7D)-2f(x_n)%7D%7B%5CDelta%20x%5E2%7D)
+![$$f''(x_n) = \frac{f(x_{n-1})+f(x_{n+1})-2f(x_n)}{\Delta x^2}$$](https://render.githubusercontent.com/render/math?math=%24%24f''(x_n)%20%3D%20%5Cfrac%7Bf(x_%7Bn-1%7D)%2Bf(x_%7Bn%2B1%7D)-2f(x_n)%7D%7B%5CDelta%20x%5E2%7D%24%24)
 
