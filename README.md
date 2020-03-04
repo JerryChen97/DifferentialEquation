@@ -47,4 +47,9 @@ Wave equations describe the oscillation, and the corresponding energy to preserv
 <p align="center"><img src="/tex/771b449f0f159ad622ddb645a134a09e.svg?invert_in_darkmode&sanitize=true" align=middle width=174.4682808pt height=36.53007435pt/></p>
 
 ## Outlook
+### Scaling
+Lots of current parameters in our method can be vanished through some scaling technique.
+This should make great difference since the finite difference method is not always reliable and the error accumulates along the evolution.
+### Other Algorithms
+### Plots
 
